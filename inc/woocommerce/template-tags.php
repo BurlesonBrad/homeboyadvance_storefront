@@ -62,6 +62,11 @@ if ( ! function_exists( 'storefront_header_cart' ) ) {
 				<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
 			</li>
 		</ul>
+		<div class="social-icons">
+			<a href="http://instagram.com/homeboyadvance" class="icon-instagram" target="_blank"></a>
+			<a href="http://facebook.com/homeboyadvance" class="icon-facebook" target="_blank"></a>
+			<a href="http://twitter.com/homeboyadvance" class="icon-twitter" target="_blank"></a>
+		</div>
 		<?php
 		}
 	}
@@ -126,7 +131,7 @@ if ( ! function_exists( 'storefront_woocommerce_pagination' ) ) {
 
 /**
  * Featured and On-Sale Products
- * Check for featured products then on-sale products and use the appropiate shortcode. 
+ * Check for featured products then on-sale products and use the appropiate shortcode.
  * If neither exist, it can fallback to show recently added products.
  * @since  1.5.1
  * @uses  is_woocommerce_activated()
@@ -137,7 +142,7 @@ if ( ! function_exists( 'storefront_woocommerce_pagination' ) ) {
  */
 if ( ! function_exists( 'storefront_promoted_products' ) ) {
 	function storefront_promoted_products( $per_page = '2', $columns = '2', $recent_fallback = true ) {
-		if ( is_woocommerce_activated() ) { 
+		if ( is_woocommerce_activated() ) {
 
 			if ( wc_get_featured_product_ids() ) {
 

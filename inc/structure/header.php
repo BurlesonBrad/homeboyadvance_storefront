@@ -108,5 +108,3 @@ if ( ! function_exists( 'storefront_skip_links' ) ) {
 		<?php
 	}
 }
-
-
