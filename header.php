@@ -37,11 +37,6 @@
 			 */
 			do_action( 'storefront_header' ); ?>
 
-			<div class="social-icons">
-				<a href="http://facebook.com/homeboyadvance" target="_blank" class="icon-facebook"></a>
-				<a href="http://instagram.com/homeboyadvance" target="_blank" class="icon-instagram"></a>
-				<a href="http://twitter.com/homeboyadvance" target="_blank" class="icon-twitter"></a>
-			</div>			
 		</div>
 	</header><!-- #masthead -->
 

@@ -38,23 +38,23 @@ add_action( 'storefront_content_top', 				'storefront_shop_messages', 				1 );
 // add_action( 'woocommerce_after_shop_loop',			'storefront_sorting_wrapper',				9 );
 // add_action( 'woocommerce_after_shop_loop', 			'woocommerce_catalog_ordering', 			10 );
 // add_action( 'woocommerce_after_shop_loop', 			'woocommerce_result_count', 				20 );
-// add_action( 'woocommerce_after_shop_loop', 			'woocommerce_pagination', 					30 );
+add_action( 'woocommerce_after_shop_loop', 			'woocommerce_pagination', 					30 );
 // add_action( 'woocommerce_after_shop_loop',			'storefront_sorting_wrapper_close',			31 );
 
 // add_action( 'woocommerce_before_shop_loop',			'storefront_sorting_wrapper',				9 );
 // add_action( 'woocommerce_before_shop_loop', 		'woocommerce_catalog_ordering', 			10 );
 // add_action( 'woocommerce_before_shop_loop', 		'woocommerce_result_count', 				20 );
-// add_action( 'woocommerce_before_shop_loop', 		'storefront_woocommerce_pagination', 		30 );
+add_action( 'woocommerce_before_shop_loop', 		'storefront_woocommerce_pagination', 		30 );
 // add_action( 'woocommerce_before_shop_loop',			'storefront_sorting_wrapper_close',			31 );
 
 /**
  * Products
  * @see  storefront_upsell_display()
  */
-// remove_action( 'woocommerce_after_single_product_summary', 	'woocommerce_upsell_display', 				15 );
-// add_action( 'woocommerce_after_single_product_summary', 	'storefront_upsell_display', 				15 );
-// remove_action( 'woocommerce_before_shop_loop_item_title', 	'woocommerce_show_product_loop_sale_flash', 10 );
-// add_action( 'woocommerce_after_shop_loop_item_title', 		'woocommerce_show_product_loop_sale_flash', 6 );
+remove_action( 'woocommerce_after_single_product_summary', 	'woocommerce_upsell_display', 				15 );
+add_action( 'woocommerce_after_single_product_summary', 	'storefront_upsell_display', 				15 );
+remove_action( 'woocommerce_before_shop_loop_item_title', 	'woocommerce_show_product_loop_sale_flash', 10 );
+add_action( 'woocommerce_after_shop_loop_item_title', 		'woocommerce_show_product_loop_sale_flash', 6 );
 
 /**
  * Header

@@ -17,8 +17,8 @@ add_action( 'after_setup_theme',			'storefront_setup' );
 add_action( 'widgets_init',					'storefront_widgets_init' );
 add_action( 'wp_enqueue_scripts',			'storefront_scripts',				10 );
 add_action( 'wp_enqueue_scripts',			'storefront_child_scripts',			30 ); // After WooCommerce
-// add_action( 'storefront_before_content',	'storefront_header_widget_region',	10 );
-// add_action( 'storefront_sidebar',			'storefront_get_sidebar',			10 );
+add_action( 'storefront_before_content',	'storefront_header_widget_region',	10 );
+add_action( 'storefront_sidebar',			'storefront_get_sidebar',			10 );
 
 /**
  * Header
@@ -37,8 +37,8 @@ add_action( 'storefront_header', 'storefront_site_branding',			20 );
  * @see  storefront_footer_widgets()
  * @see  storefront_credit()
  */
-// add_action( 'storefront_footer', 'storefront_footer_widgets',	10 );
-// add_action( 'storefront_footer', 'storefront_credit',			20 );
+add_action( 'storefront_footer', 'storefront_footer_widgets',	10 );
+add_action( 'storefront_footer', 'storefront_credit',			20 );
 
 /**
  * Homepage
@@ -50,11 +50,11 @@ add_action( 'storefront_header', 'storefront_site_branding',			20 );
  * @see  storefront_on_sale_products()
  */
 add_action( 'homepage', 'storefront_homepage_content',		10 );
-// add_action( 'homepage', 'storefront_product_categories',	20 );
-// add_action( 'homepage', 'storefront_recent_products',		30 );
-// add_action( 'homepage', 'storefront_featured_products',		40 );
-// add_action( 'homepage', 'storefront_popular_products',		50 );
-// add_action( 'homepage', 'storefront_on_sale_products',		60 );
+add_action( 'homepage', 'storefront_product_categories',	20 );
+add_action( 'homepage', 'storefront_recent_products',		30 );
+add_action( 'homepage', 'storefront_featured_products',		40 );
+add_action( 'homepage', 'storefront_popular_products',		50 );
+add_action( 'homepage', 'storefront_on_sale_products',		60 );
 
 /**
  * Posts
@@ -82,7 +82,7 @@ add_action( 'storefront_single_post_after',	'storefront_display_comments',	20 );
  * @see  storefront_page_content()
  * @see  storefront_display_comments()
  */
-add_action( 'storefront_page', 			'storefront_page_header',		10 );
+// add_action( 'storefront_page', 			'storefront_page_header',		10 );
 add_action( 'storefront_page', 			'storefront_page_content',		20 );
 add_action( 'storefront_page_after', 	'storefront_display_comments',	10 );
 
