@@ -1,0 +1,321 @@
+/* all black everything */
+button, button.alt,
+.button, .button.alt,
+input[type="submit"], input[type="submit"].alt,
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message, 
+.woocommerce-noreviews, 
+p.no-comments {
+    background: black;
+    outline: none;
+}
+
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message, 
+.woocommerce-noreviews, 
+p.no-comments {
+    color: white;
+}
+
+body, a, h1, h2, h3, h4, h5, h6
+.main-navigation ul li a, 
+.site-title a, 
+ul.menu li a, 
+.site-branding h1 a,
+.woocommerce-tabs ul.tabs li.active a, 
+ul.products li.product .price, 
+.onsale,
+.site-footer, .site-footer a:not(.button) {
+    color: black;
+}
+
+/* black up the hover states */
+a:hover, .site-footer a:not(.button):hover, 
+.widget-area .widget a:hover {
+    color: white;
+}
+
+a:hover, .site-footer a:not(.button):hover, button.alt:hover, input[type="button"].alt:hover, input[type="reset"].alt:hover, input[type="submit"].alt:hover, .button.alt:hover, .added_to_cart.alt:hover, .widget-area .widget a.button.alt:hover, .added_to_cart:hover, .widget-area .widget a:hover {
+    background-color: black;
+}
+
+/* fuck borders */
+button, .button, .hentry,
+.single-product div.product form.cart,
+.single-product div.product .variations_button,
+table thead th, table tfoot th, table tfoot td,
+a:focus,
+#order_review, #order_review_heading,
+#payment .payment_methods,
+#payment .payment_methods li .payment_box,
+.product_list_widget li {
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+/* fuck these backgrounds in particular */
+body,
+table tbody td,
+table tbody tr:nth-child(2n) td,
+#payment .payment_methods li .payment_box,
+.site-footer,
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus, .input-text:focus {
+    background: none;
+}
+
+/* except for input fields */
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], .input-text,
+select, .select2-container .select2-choice,
+table.cart .qty {
+    border: solid #000;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    background: #fff;
+    padding: 5px 5px 5px 0;
+    height: 34px;
+    box-shadow: none;
+    color: black;
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 0;
+    background: #fff;
+    padding: 10px;
+    height: 120px;
+    box-shadow: none;
+    line-height: 1.25em;
+    color: black;
+}
+
+/* social icons */
+.social-icons {
+    margin: 25px 5px 0 0;
+    font-size: 18px;
+    color: #333;
+    font-family: FontAwesome;
+}
+
+.icon-instagram:after {
+    content: "\f16d";
+}
+
+.icon-facebook:after {
+    content: "\f230";
+}
+
+.icon-twitter:after {
+    content: "\f099";
+}   
+
+/* header */
+.site-header {
+    background: none;
+    margin-right: 0;
+    margin-bottom: 4.236em; 
+}
+
+a.site-logo-link:hover {
+    background: none;
+}
+
+/* navigation */
+.woocommerce-active .site-header .main-navigation {
+    float: right;
+    margin-right: 0;
+    margin-top: 15px;
+    text-align: right;
+    clear: none;
+    width: 500px;
+}
+
+.main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
+    padding: 5px 1em;
+}
+
+.main-navigation ul li a:hover {
+    background: none;
+    color: #666;
+}
+
+ul.menu li.current-menu-item > a {
+    background-color: black;
+    color: white;
+}
+
+/* shop */
+.woocommerce-page .content-area {
+    width: 100%;
+}
+
+/* product page */
+.single-product div.product .images {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.single-product div.product .summary {
+    width: 35%; 
+}
+
+.single-product div.product form.cart {
+    margin: 0;
+    padding: 0;
+}
+
+.single-product div.product .images .woocommerce-main-image:hover {
+    background: none;
+}
+
+a.zoom:hover {
+    background-color: #eaeaea;
+}
+
+/* article */
+#post-2 {
+    max-width: 640px;
+    border-bottom: 0;
+    margin: 0 auto;
+}
+
+article.post {
+    border-bottom: 1px solid black;
+    padding-bottom: 2.75em;
+    margin-bottom: 3.5em;
+}
+
+.hentry .entry-header {
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.hentry .entry-header h1 {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.hentry .entry-header .posted-on {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.hentry.type-post .entry-content,
+.hentry.type-post .entry-meta {
+    float: none;
+    width: 100%;
+}
+
+#respond {
+    background: none;
+    padding: 20px 0 0;
+    border-top: 1px solid black;
+}
+
+/* comments */
+#comments {
+    padding: 0;
+}
+
+#comments .comments-title {
+    border-bottom: 1px solid black;
+}
+
+#comments .comment-list .reply a {
+    border: 1px solid black;
+    color: black;
+    margin-right: 10px;
+    background: white;
+}
+
+#comments .comment-list .reply a:hover {
+    background: black;
+    color: white;
+}
+
+#comments .comment-list .reply .comment-edit-link {
+    border: 1px solid black;
+}
+
+/* sidebar */
+.widget h3.widget-title, .widget h2.widgettitle {
+    border-bottom: 1px solid black;
+    padding: 0 0 .75em;
+}
+
+.product_list_widget li img {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    background: white;
+    max-width: 100%;
+}
+
+/* tables */
+table.shop_table th, table.shop_table td,
+#payment .payment_methods li {
+    padding: 0.857em 1.387em .857em 0;
+}
+
+table.shop_table thead th {
+    border-bottom: 1px solid black;
+    text-indent: 0;
+}
+
+/* cart */
+table.cart .product-thumbnail {
+    display: block;
+}
+
+table.cart td.product-quantity {
+    padding-top: 6px;
+}
+
+a.remove:before {
+    content: "\f00d";
+    font-size: 20px;
+    color: black;
+    line-height: 22px;
+}
+
+a.remove:hover:before {
+    color: #e2401c;
+}
+
+/* checkout */
+input#ship-to-different-address-checkbox {
+    margin-left: 10px;
+}
+
+#order_review_heading {
+    padding-top: 0;
+    padding-bottom: 22px;
+    padding-left: 0;
+}
+
+#payment {
+    border-top: 1px solid black;
+}
+
+input#place_order {
+    height: 50px;
+}
+
+/* responsivity */
+@media (min-width: 768px) {
+    .storefront-full-width-content.single-product div.product .images {
+        width: calc(60% - 10px);
+        margin-right: 10px;
+    }
+    
+    .storefront-full-width-content.single-product div.product .summary {
+        width: 40%;
+    }
+    
+    table.cart .quantity .qty {
+        padding: 5px;
+    }
+}

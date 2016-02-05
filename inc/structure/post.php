@@ -14,14 +14,14 @@ if ( ! function_exists( 'storefront_post_header' ) ) {
 		<header class="entry-header">
 		<?php
 		if ( is_single() ) {
-			storefront_posted_on();
 			the_title( '<h1 class="entry-title" itemprop="name headline">', '</h1>' );
+			storefront_posted_on();
 		} else {
+			the_title( sprintf( '<h1 class="entry-title" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+
 			if ( 'post' == get_post_type() ) {
 				storefront_posted_on();
 			}
-
-			the_title( sprintf( '<h1 class="entry-title" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
 		}
 		?>
 		</header><!-- .entry-header -->
@@ -95,9 +95,9 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 
 			<?php endif; // End if 'post' == get_post_type() ?>
 
-			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+<!-- 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'storefront' ), __( '1 Comment', 'storefront' ), __( '% Comments', 'storefront' ) ); ?></span>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		</aside>
 		<?php
 	}
@@ -151,7 +151,7 @@ if ( ! function_exists( 'storefront_posted_on' ) ) {
 		);
 
 		$posted_on = sprintf(
-			_x( 'Posted on %s', 'post date', 'storefront' ),
+			_x( '%s', 'post date', 'storefront' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
