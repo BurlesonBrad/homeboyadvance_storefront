@@ -2,37 +2,37 @@
 button, button.alt,
 .button, .button.alt,
 input[type="submit"], input[type="submit"].alt,
-.woocommerce-error, 
-.woocommerce-info, 
-.woocommerce-message, 
-.woocommerce-noreviews, 
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-noreviews,
 p.no-comments {
     background: black;
     outline: none;
 }
 
-.woocommerce-error, 
-.woocommerce-info, 
-.woocommerce-message, 
-.woocommerce-noreviews, 
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-noreviews,
 p.no-comments {
     color: white;
 }
 
 body, a, h1, h2, h3, h4, h5, h6
-.main-navigation ul li a, 
-.site-title a, 
-ul.menu li a, 
+.main-navigation ul li a,
+.site-title a,
+ul.menu li a,
 .site-branding h1 a,
-.woocommerce-tabs ul.tabs li.active a, 
-ul.products li.product .price, 
+.woocommerce-tabs ul.tabs li.active a,
+ul.products li.product .price,
 .onsale,
 .site-footer, .site-footer a:not(.button) {
     color: black;
 }
 
 /* black up the hover states */
-a:hover, .site-footer a:not(.button):hover, 
+a:hover, .site-footer a:not(.button):hover,
 .widget-area .widget a:hover {
     color: white;
 }
@@ -109,13 +109,13 @@ textarea {
 
 .icon-twitter:after {
     content: "\f099";
-}   
+}
 
 /* header */
 .site-header {
     background: none;
     margin-right: 0;
-    margin-bottom: 4.236em; 
+    margin-bottom: 4.236em;
 }
 
 a.site-logo-link:hover {
@@ -158,7 +158,7 @@ ul.menu li.current-menu-item > a {
 }
 
 .single-product div.product .summary {
-    width: 35%; 
+    width: 35%;
 }
 
 .single-product div.product form.cart {
@@ -246,12 +246,28 @@ article.post {
     padding: 0 0 .75em;
 }
 
-.product_list_widget li img {
+.product_list_widget li {
+    text-align: center;
+}
+
+.product_list_widget li a img {
     width: 100%;
     float: none;
     margin: 0 auto;
     background: white;
     max-width: 100%;
+}
+
+.product_list_widget li a .product-title {
+    color: black;
+}
+
+.product_list_widget li a:hover .product-title {
+    color: white;
+}
+
+.product_list_widget li .amount {
+    font-weight: bold;
 }
 
 /* tables */
@@ -310,11 +326,11 @@ input#place_order {
         width: calc(60% - 10px);
         margin-right: 10px;
     }
-    
+
     .storefront-full-width-content.single-product div.product .summary {
         width: 40%;
     }
-    
+
     table.cart .quantity .qty {
         padding: 5px;
     }
