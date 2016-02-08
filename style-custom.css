@@ -198,9 +198,18 @@ article.post {
 }
 
 .hentry .entry-header .posted-on {
-    display: block;
     margin-top: 10px;
+    line-height: 2.5em;
     text-transform: uppercase;
+}
+
+.hentry .wp-post-image {
+    margin-bottom: 0.5em;
+}
+
+.hentry .ccfic {
+    margin-bottom: 1em;
+    font-size: 0.75em;
 }
 
 .hentry.type-post .entry-content,

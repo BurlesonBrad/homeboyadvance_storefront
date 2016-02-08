@@ -16,6 +16,7 @@
 
 <?php wp_head(); ?>
 <link rel="stylesheet" href="http://homeboyadvance.com/wp-content/themes/storefront/style-custom.css">
+<link rel="author" href="https://plus.google.com/u/1/112438534943125095989/posts" />
 </head>
 
 <body <?php body_class(); ?>>
